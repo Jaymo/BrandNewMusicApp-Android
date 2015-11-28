@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+  <PreferenceCategory android:title="@string/bnm_settings" >
+      
+       <SwitchPreference
+            android:key="enable_notications"
+             android:defaultValue="true"
+            android:title="@string/notifications" />
+
+        <SwitchPreference
+            android:key="enable_sync"
+            android:defaultValue="true"
+            android:title="@string/sync" />
+        
+        <SwitchPreference
+            android:key="enable_cache"
+            android:defaultValue="false"
+            android:title="@string/cache" />    
+       </PreferenceCategory>
+       
+  
+    
+     <PreferenceCategory android:title="@string/about_bnm" >
+        <Preference android:key="powered_preference" />
+        <Preference android:key="email_preference" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/logout_pref" >
+        <Preference android:key="logout_preference" />
+    </PreferenceCategory>
+     
+</PreferenceScreen>

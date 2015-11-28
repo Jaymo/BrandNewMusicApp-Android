@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_row"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bnm_list_selector"
+    android:orientation="horizontal" >
+
+    <!-- Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/artist_list_image"
+            android:layout_width="75dip"
+            android:layout_height="75dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/rihanna" />
+    </LinearLayout>
+
+    <!-- Artist Name -->
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/artist_name"
+        android:textColor="#040404"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/status_update"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artist_name"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/status_update"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/latest_track"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_update"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/latest_track_name"
+        android:textColor="#343434"
+        android:textSize="12sp" />
+
+    <!-- Track Count -->
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/artist_name"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:paddingTop="2dip"
+        android:text="@string/track_count"
+        android:textColor="#3a3a3a"
+        android:textSize="12sp"/>
+        
+
+    <!-- Rightend Arrow -->
+
+    <ImageView
+        android:id="@+id/arrw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_list_more" />
+
+</RelativeLayout>

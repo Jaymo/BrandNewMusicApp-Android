@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".fragments.MainPlayerfragment" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:orientation="vertical" >
+
+        <!-- Track Thumbnail Image -->
+
+        <LinearLayout
+            android:id="@+id/songthumbnail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:id="@+id/album_art"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/stud_track" />
+        </LinearLayout>
+
+        <!-- Timer Display -->
+
+        <LinearLayout
+            android:id="@+id/timerDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <!-- Current Duration Label -->
+
+            <TextView
+                android:id="@+id/songduration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:textColor="#cc0303"
+                android:textStyle="bold" />
+
+            <!-- Track Progress Indicator -->
+
+            <ProgressBar
+                android:id="@+id/songProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="92"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_horizontal_holo_light" />
+
+            <!-- Total Duration Label -->
+
+            <TextView
+                android:id="@+id/songtotalduration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="right"
+                android:textColor="#cc0303"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player_track_title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/songTitle"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="10sp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/track_name"
+                android:textColor="#cc0303"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player_footer_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp" >
+
+            <!-- Player Buttons -->
+
+
+            <!-- Back Button -->
+
+            <ImageView
+                android:id="@+id/back"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
+                android:src="@drawable/back" />
+
+            <!-- Play Button -->
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/play" />
+
+            <!-- Next Button -->
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/next" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

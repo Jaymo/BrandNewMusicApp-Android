@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="CheckBoxbnm_toggle" parent="android:Widget.CompoundButton.CheckBox">
+      <item name="android:button">@drawable/bnm_toggle_btn_check_holo_light</item>
+  </style>
+
+  <style name="Togglebnm_toggle" parent="android:Widget.Button.Toggle">
+      <item name="android:background">@drawable/bnm_toggle_btn_toggle_holo_light</item>
+      <item name="android:minHeight">48dip</item>
+	  <item name="android:textColor">#000000</item>
+  </style>
+
+</resources>

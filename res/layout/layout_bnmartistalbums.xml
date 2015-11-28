@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bnm_list_selector"
+    android:orientation="horizontal" >
+
+    <!-- Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/album_list_image"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/rihanna" />
+    </LinearLayout>
+
+    <!-- Album Name -->
+
+    <TextView
+        android:id="@+id/album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="@string/artist_name"
+        android:textColor="#040404"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- Album Date -->
+
+    <TextView
+        android:id="@+id/album_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/album_name"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/track_name"
+        android:textColor="#343434"
+        android:textSize="14sp" />
+   
+
+    
+
+</RelativeLayout>
